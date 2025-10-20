@@ -1,8 +1,8 @@
-# Node.js CI/CD Pipeline Demo 🚀
+# Node.js CI/CD Pipeline Demo
 
 A Node.js web application with automated CI/CD deployment using Docker and GitHub Actions.
 
-## 📦 Technologies Used
+##  Technologies Used
 
 - **Node.js** - Runtime environment (server)
 - **Express.js** - Web framework
@@ -10,7 +10,7 @@ A Node.js web application with automated CI/CD deployment using Docker and GitHu
 - **GitHub Actions** - CI/CD pipeline
 - **HTML/CSS** - Beautiful responsive UI
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Clone the repository
@@ -26,7 +26,7 @@ npm start
 
 Visit `http://localhost:3000` to see the beautiful interface.
 
-## 🐳 Docker Usage
+##  Docker Usage
 
 ```bash
 # Build Docker image
@@ -36,7 +36,7 @@ docker build -t nodejs-demo .
 docker run -p 3000:3000 nodejs-demo
 ```
 
-## 📋 CI/CD Pipeline
+##  CI/CD Pipeline
 
 The GitHub Actions workflow automatically:
 1. Triggers on push to `main` branch

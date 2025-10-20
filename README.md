@@ -16,6 +16,25 @@ During this project, I learned how to:
   - YouTube tutorials and Google resources to understand workflow setup
 - **Troubleshoot common CI/CD issues**, like YAML syntax errors, secret misconfigurations, and login errors with DockerHub.
 
+## Challenges & Solutions
+
+**GitHub Actions Not Triggering**
+- **Cause:** Workflow file location or branch mismatch, YAML indentation issues
+- **Solution:** Placed workflow at `.github/workflows/main.yml`, fixed indentation, ensured trigger branch was correct
+
+**Docker Login Failed**
+- **Cause:** GitHub Actions couldn't access DockerHub credentials
+- **Solution:** Added secrets `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` and updated workflow to use them
+
+**Password Required Error**
+- **Cause:** Used DockerHub password instead of access token
+- **Solution:** Generated a personal access token and updated the secret
+
+**Outcome:**
+- CI/CD pipeline now automatically builds, tests, and pushes Docker images on every push to main
+- Learned workflow debugging, YAML formatting, and secret management in GitHub Actions
+
+
 ## Setup Instructions
 
 1. **Clone the repository**
